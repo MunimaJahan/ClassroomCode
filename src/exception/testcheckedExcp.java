@@ -12,7 +12,7 @@ public class testcheckedExcp {
 		try {
 			File file = new File("E://file.txt");
 			fr = new FileReader(file); 
-			fr.close();
+			
 		}
 		catch(IOException e) {
 			System.out.println(e.getMessage());
@@ -21,10 +21,10 @@ public class testcheckedExcp {
 		finally {
 		try {
 			fr.close();
+		
 		}catch(IOException e) {
 			System.out.println(e.getMessage());
 		}
-		
 		}
 	}
 }
